@@ -27,5 +27,5 @@ enum MuInfoOption {
   ZUGFeRD_info('-Z');
 
   final String val;
-  const MuInfoOption(this.val);
+  const new(this.val);
 }

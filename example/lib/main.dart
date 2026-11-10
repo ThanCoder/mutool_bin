@@ -93,6 +93,27 @@ class _MyAppState extends State<MyApp> {
           },
           child: Text('show info'),
         ),
+
+        FilledButton(
+          onPressed: () async {
+            final p =
+                '/home/thancoder/Documents/တာအိုကျင့်ကြံခြင်းလောကမှ နှာဘူး';
+
+            final res = await pkg.tool.merge([
+              .new(output: '$p/5.pdf'),
+              .new(output: '$p/6.pdf'),
+            ], output: '$p/5-6.pdf');
+            res.onResult(
+              onErr: (err) => setState(() {
+                resText = err;
+              }),
+              onOk: (val) => setState(() {
+                resText = val;
+              }),
+            );
+          },
+          child: Text('Pdf Merge'),
+        ),
       ],
     );
   }
