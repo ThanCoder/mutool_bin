@@ -1,6 +1,7 @@
 name: mutool_bin
 description: "A Dart package that provides a convenient interface for executing **MuPDF's `mutool` command-line utility**."
 repository: https://github.com/ThanCoder/mutool_bin.git
+homepage: https://pub.dev/packages/mutool_bin
 
 version: 0.0.1
 
