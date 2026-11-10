@@ -60,11 +60,7 @@ Future<void> extractLib(
 
   // download
   await downloadLib(config.downloadUrl, libZipFile);
-  await extractZip(
-    libZipFile,
-    outDir: Directory(nativeAssets),
-    libs: config.libs,
-  );
+  await extractZip(libZipFile, outDir: outDir, libs: config.libs);
 }
 
 class LibArchiveConfig {

@@ -1,5 +1,5 @@
 name: mutool_bin
-description: "A new Dart FFI package project."
+description: "A Dart package that provides a convenient interface for executing **MuPDF's `mutool` command-line utility**."
 repository: https://github.com/ThanCoder/mutool_bin.git
 
 version: 0.0.1
